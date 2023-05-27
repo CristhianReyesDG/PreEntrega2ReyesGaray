@@ -47,6 +47,7 @@ header{
 }
 
 main{
+
     display: grid;
     background-color: rgb(192, 161, 120);
 }
@@ -78,6 +79,7 @@ main{
     background-color: rgb(78, 112, 78);
     padding: 10px;
     justify-content: space-around;
+    height: 30rem;
 }
 
 
