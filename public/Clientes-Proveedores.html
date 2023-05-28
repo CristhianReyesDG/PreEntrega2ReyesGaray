@@ -5,95 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adiminium</title>
-    <!--Agregado del icono-->
-    <link rel="shortcut icon" href="../icon/icon.png" type="image/x-icon">
-    <!--Localizado de la pagina encargada de ingresar los datos css al documento html-->
-    <link rel="stylesheet" href="../css/styles-Clientes-Proveedores.css">
+    <link rel="shortcut icon" href="./icon/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles-clientes-proveedores.css">
 </head>
 <body>
     <header>
-        <!--Menu Superior de Navegacion, con el Link a los diferentes documentos html-->
-            <nav class="Menu-direcciones">
-                <!--Boton especial por para contacto-->
-                <form action="../public/Contacto.html">
-                    <button class="Contactanos">Contactanos</button>
-                </form>
-                <!--Link tradicional al resto de los documentos-->
-                <a href="../index.html" target="_self">Pagina de Inicio</a>
-                <a href="../public/Stock.html" target="_self">Stock</a>
-                <a href="../public/Precios.html" target="_self">Precios</a>
-                <a href="../public/Clientes-Proveedores.html" target="_self">Clientes-Proveedores</a> 
+        <section class="encaberzado-index">
+            <nav class="nav-index">
+                <a href="../public/Contacto.html" class="contacto-button-index"> 
+                    <img src="../icon/icon.png" alt="Icono" class="nav-icon">
+                </a>
+                <div class="test">
+                    <a href="../public/Contacto.html" target="_self" class="contacto-button-index nav-button-index">Contacto</a>
+                    <a href="../index.html" target="_self" class="index-button nav-button-index">Pagina de Inicio</a>
+                    <a href="../public/Stock.html" target="_self" class="stock-button nav-button-index">Stock</a>
+                    <a href="../public/Precios.html" target="_self" class = "precios-button nav-button-index">Precios</a>
+                    <a href="./public/Clientes-Proveedores.html" target="_self" class="cli-prov-button nav-button-index">Clientes-Proveedores</a> 
+                </div>
             </nav>
-            <section class="textos-header">
-                <!--Titulo principal de la pagina-->
-                <h1>
-                    Adiminium
-                </h1>
-                <h2>
-                    Precios y Costos en un Solo lugar
-                </h2>
-            </section>
-            <!--Se inserta la ola que aparece al final del encabezado-->
-            <div class="wave-inicio" style="height: 150px; overflow: hidden;" >
-                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M0.00,49.98 C53.33,152.47 356.37,15.30 500.00,49.98 L500.00,150.00 L-1.97,150.50 Z" style="stroke: none; fill: #fff;"></path>
-                </svg>
-            </div>
-    </header>
-    <!--Contenido principal de la pagina-->
+        </section>
     <main>
-        <h2> Clientes</h2>
-        <p class="titulo-sec">Mantene un orden de tus Clientes y revisa sus datos cuando lo necesites.</p>
-        <section class="main-text">
-            <!--Imagen agregada al costado del texto-->
-            <div class="image-cliente">
-                <img src="../image/client-image-1.jpg" alt="">
-            </div>
-            <div class="contenido-clientes">
-                <!--Enlistado de las opciones de trabajo con clientes que se tiene en la plataforma-->
-                <h3 class="Cl-comrpas">Que te compran tus clientes</h3>
-                <p class="expl">Agrega un cliente, y revisa sus compras. Que producto o servicio adquirio y en que periodisidad compro</p>
-                <h3 class="Cl-Datos">Tene la Informacion a mano</h3>
-                <p class="expl">Mantene de manera segura los datos de tus clientes, editala en caso de necesitarlo o directamente dalo de baja en caso de que eso desees.</p>
-                <h3 class="Cl-Resumen  ">Descarga Resumenes</h3>
-                <p class="expl">Descarga Informes completos de todos los datos necesarios para realizar informes detallados sobre la relacion producto-cliente, los valores de costos y ganancias. Genera Facturas, cotizaciones o presupuestos segun necesites. </p>
-            </div>
+        <form action="">
+            <label for="cli*prov">Elija una Opcion</label>
+            <select id="cli-prov" name="Cliente-Proveedor">
+              <option value="Proveedor">Proveedor</option>
+              <option value="Cliente">Cliente</option>
+            </select>
+            <br><H2>Que accion desea realizar</H2>
+        </form>
+        <form action="">
+             <input type="radio" id="agregar" name="accion" value="AGREGAR">
+            <label for="agregar">AGREGAR</label><br>
+            <input type="radio" id="editar" name="accion" value="EDITAR">
+            <label for="editar">EDITAR</label><br>
+        </form>
+        <section class="provedores-main">
+            <div class="add-prov">        
+                <form action="" class="proveedores-datos">
+                    <h2>DATOS DE PROVEEDOR</h2>
+                    <label for=""></label><br>
+                    <input type="text" name="" id=""><br>
+                    <label for=""></label><br>
+                    <input type="text" name="" id="">
+                    <label for=""></label><br>
+                    <input type="text" name="" id="">
+                    <label for=""></label><br>
+                    <input type="text" name="" id="">
+                    <label for=""></label><br>
+                    <input type="text" name="" id="">
+                    <label for=""></label><br>
+                    <input type="text" name="" id="">
+                    <label for=""></label><br>
+                    <input type="text" name="" id="">
+                    <label for=""></label><br>
+                </form>
+                <form action="" class="proveedores-contacto">
+                        <H2>DATOS DE CONTACTO</H2>
+                        <label for="">Pais</label>
+                        <select id="" name="">
+                            <option value="">Pais Ejemplo</option>
+                        </select>
+                        <label for="">Provincia</label>
+                        <select id="" name="">
+                            <option value="Proveedor">Provincia Ejemplo</option>
+                        </select>
+                        <label for="">Localidad</label>
+                        <select id="" name="">
+                            <option value="">Localidad Ejemplo</option>
+                        </select>
+                </form> 
+                <form action="">
+                    <h2>DATOS ADICIONALES</h2>
+                    <label for=""></label><br>
+                    <input type="text" name="" id=""><br>
+                    <label for=""></label><br>
+                    <input type="text" name="" id=""><br>
+                </form>
+            </div>   
         </section>
-        <h2> Proveedores</h2>
-        <p class="titulo-sec">Proveedores y Compras en un solo lugar.</p>
-        <section class="main-text">
-            <!--Imagen agregada al costado del texto-->
-            <div class="image-proveedor">
-                <img src="../image/image-proveedor-1.jpg" alt="">
-            </div>    
-            <div class="contenido-proveedores">
-                <!--Enlistado de las opciones de trabajo con clientes que se tiene en la plataforma-->
-                <h3 class="Pv-comrpas">Compras a Proveedores</h3>
-                <p class="expl">Revisa las entradas relacionadas a compras realizadas por vos, a tus proveedores y el historial de compra a cada uno.</p>
-                <h3 class="Pv-Datos">Conoce con quien negocias</h3>
-                <p class="expl">Tene a dispocision la informacion de cada proveedor, sus datos logisticos, comerciales y contables.</p>
-                <h3 class="Pv-Resumen  ">Todo en un solo lugar</h3>
-                <p class="expl">Vas a poder realizar notas de pedidos, enviar directamente las ordenes a tus proveedores</p>
-            </div>
-        </section>
-    <!--Pie de pagina con datos de contacto y Derechos de Autor-->
     </main>
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>11111111</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>ejemplo@gmail.com</p>
-            </div>
-            <div class="content-foo">
-                <h4>Redes</h4>
-                <p>instagram.com</p>
-            </div>
-        </div>
-        <h2 id="fondo"> &copy; Adiminium | Cristhian Reyes </h2>
-    </footer>
+    <footer class="index-footer">
+            <section>
+                <div class="contacto" >
+                    <a href="" class="footer-icon-hover">
+                        <img src="../icon/fb.png" alt="Facebook" class="footerfb">
+                    </a>
+                    <a href="" class="footer-icon-hover">
+                        <img src="../icon/wpp.png" alt="Whatsapp" class="footerwpp">
+                    </a>
+                    <a href="" class="footer-icon-hover">
+                        <img src="../icon/email.png" alt="Email" class="footeremail">
+                    </a>
+                </div>
+                <div class="datos-personales">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi maiores commodi vero similique non odit ratione provident cupiditate deleniti.
+                    </p>
+                </div>
+            </section>
+        </footer>
+    </body>
+    </html>    
 </body>
 </html>

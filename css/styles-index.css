@@ -42,14 +42,8 @@ a{
 /*Encabezado. Titulo y subtitulo*/
 
 
-header{
-    background-color: #635985;
-}
-
 main{
-
     display: grid;
-    background-color: rgb(192, 161, 120);
 }
 
 .cards-c{
@@ -76,15 +70,41 @@ main{
 
 .cards {
     display: grid;
-    background-color: rgb(78, 112, 78);
+    background-color: rgb(40, 19, 53);
     padding: 10px;
     justify-content: space-around;
     height: 30rem;
+    color: aliceblue;
+}
+
+.testimonios-cards{
+    padding: 15px;
+}
+
+.testimonios-cards div {
+    display: grid;
+    height: 250px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
+.testimonios-cards div p{
+    font-size: xx-large;
+
+}
+
+.img-testimonio { 
+    object-fit: cover;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+
+
+
+
 footer{
-    background-color: rgb(155, 155, 207);
+    background-color: rgb(40, 19, 53);
 }
 
 .contacto{
