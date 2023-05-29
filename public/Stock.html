@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adiminium</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!--Agregado del icono-->
     <link rel="shortcut icon" href="../icon/icon.png" type="image/x-icon">
     <!--Localizado de la pagina encargada de ingresar los datos css al documento html-->
@@ -12,73 +13,38 @@
 </head>
 <body>
     <header>
-            <!--Menu Superior de Navegacion, con el Link a los diferentes documentos html-->
-            <nav class="Menu-direcciones">
-                <!--Boton especial por para contacto-->
-                <form action="../public/Contacto.html">
-                    <button class="Contactanos">Contactanos</button>
-                </form>
-                <!--Link tradicional al resto de los documentos-->
-                <a href="../index.html" target="_self">Pagina de Inicio</a>
-                <a href="../public/Stock.html" target="_self">Stock</a>
-                <a href="../public/Precios.html" target="_self">Precios</a>
-                <a href="../public/Clientes-Proveedores.html" target="_self">Clientes-Proveedores</a> 
-            </nav>
-            <section class="textos-header">
-                <!--Titulo principal de la pagina-->
-                <h1>
-                    Adiminium
-                </h1>
-                <!--Pequeño Resumen de lo que se vera en la pagina-->
-                <h2>
-                    Maneja tu Stock de la Manera mas comoda
-                </h2>
-            </section>
-            <!--Se inserta la ola que aparece al final del encabezado-->
-            <div class="wave-inicio" style="height: 150px; overflow: hidden;" >
-                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M0.00,49.98 C53.33,152.47 356.37,15.30 500.00,49.98 L500.00,150.00 L-1.97,150.50 Z" style="stroke: none; fill: #fff;"></path>
-                </svg>
-            </div>
+        <img class="logo" src="./icon/icon.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="../public/Contacto.html">Contacto</a></li>
+                <li><a href="../public/Stock.html">Stock</a></li>
+                <li><a href="../public/Clientes-Proveedores.html">Clientes-Proveedores</a></li>
+                <li><a href="../public/Precios.html">Precios</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+            </ul>
+        </nav>
     </header>
     <!--Contenido principal de la pagina-->
     <main>
-        <!--Introduccion al manejo de stock-->
-        <h2> Como manejar tu Stock</h2>
-        <p>
-        Te facilitamos el manejo del stock de la mejor manera posible, teniendo en cuenta todas las necesidades del usuario</p>
-        <section class="Stock">
-                <!--Imagen agregada al costado del texto-->
-                <img class="Image-stock-2" src="../image/image-bodega-service-1.jpg" alt="">
-                <div class="texto-imagen">
-                    <!--Lista de las cosas que se pueden hacer con el sistema-->
-                    <ul>
-                        <!--Es una lista simple, por lo que se mantiene el formato de listado, usando solo los puntos negros para enumerar los elementos-->
-                        <li>Ingreso de Mercaderia : Creacion de Items o Servicios Nuevos a tu stock.</li>
-                        <li>Modificacion de Stock : Modifica las cantidades de tu stock actual, agregando informacion importante para poder identificar el movimiento (Razon, persona que la realiza, adjuntar Recibos o Facturas a las entradas o salidas, entre otras) </li>
-                        <li>Creacion de Combos : Crea combos con tu stock actual y maneja conjuntos de items de manera mas agil.</li>
-                        <li>Revisa tus movimientos : Revisa todos los movimientos de stock, buscando por item, por responsable de la modificacion, fecha y muchas mas posibilidades</li>
-                    </ul>
+    
+        <footer class="index-footer">
+            <section>
+                <div class="contacto" >
+                    <a href="" class="footer-icon-hover">
+                        <img src="./icon/fb.png" alt="Facebook" class="footerfb">
+                    </a>
+                    <a href="" class="footer-icon-hover">
+                        <img src="./icon/wpp.png" alt="Whatsapp" class="footerwpp">
+                    </a>
+                    <a href="" class="footer-icon-hover">
+                        <img src="./icon/email.png" alt="Email" class="footeremail">
+                    </a>
                 </div>
-        </section>
-    </main>
-    <!--Pie de pagina con datos de contacto y Derechos de Autor-->
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>11111111</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>ejemplo@gmail.com</p>
-            </div>
-            <div class="content-foo">
-                <h4>Redes</h4>
-                <p>instagram.com</p>
-            </div>
-        </div>
-        <h2 id="fondo"> &copy; Adiminium | Cristhian Reyes </h2>
-    </footer>
+                <div class="datos-personales">
+            </section>
+        </footer>
+        <script src="./js/main.js"></script>
 </body>
 </html>

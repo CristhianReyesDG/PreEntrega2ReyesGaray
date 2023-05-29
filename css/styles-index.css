@@ -1,51 +1,86 @@
 
-/* Revisar como agregar una fuente
-
-@font-face {
-    font-family: "Ubuntu";
-    src: url('../font/Ubuntu/');
-}
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-
-*/
-
 /*Puesta en cero de valores por defecto de la pagina*/
 *{
     padding: 0px;
     margin: 0px;
 }
 /*header*/
-/*Color de la letra del Nav*/
-a{
-    color: aliceblue;
-}
-/*Icono del Nav - Clickeable para abrir el formulario de contacto*/
-.nav-icon{
+header {
     display: flex;
-    width: 30px;
-    height: 30px;
-}
-/*Valores del Nav - Color, espaciado y demas*/
-.nav-index{
-    padding: 10px;
-    position: sticky;
-    background-color: rgb(82, 55, 145);
-    display: flex;
-    font-family:Arial, Helvetica, sans-serif;
     align-items: center;
     justify-content: space-between;
+    padding: 2rem;
+    background-color: #4d296e;
 }
-.nav-button-index{
-    margin: 10px;
+
+.logo {
+    max-width: 5rem;
 }
-.contacto-button-index{
+
+.nav-list {
+    list-style-type: none;
     display: flex;
-    align-items: center;
+    gap: 1rem;
+}
+
+.nav-list li a {
     text-decoration: none;
+    color: #ffffff;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
 
-/*Encabezado. Titulo y subtitulo*/
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #41073e;
+        padding: 2rem;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #c9bbbbec;
+    }
+}
 
 
 main{

@@ -5,44 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adiminium</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="./icon/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles-index.css">
-    
 </head>
 <body>
     <header>
-        <section class="encaberzado-index">
-            <nav class="nav-index">
-                <a href="./public/Contacto.html" class="contacto-button-index"> 
-                    <img src="./icon/icon.png" alt="Icono" class="nav-icon">
-                    Contactenos
-                </a>
-                <div>
-                    <a href="./index.html" target="_self" class="index-button nav-button-index">Pagina de Inicio</a>
-                    <a href="./public/Stock.html" target="_self" class="stock-button nav-button-index">Stock</a>
-                    <a href="./public/Precios.html" target="_self" class = "precios-button nav-button-index">Precios</a>
-                    <a href="./public/Clientes-Proveedores.html" target="_self" class="cli-prov-button nav-button-index">Clientes-Proveedores</a> 
-                </div>
-            </nav>
-        </section>
-        <section class="wave-tittle">
-            <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 300">
-                <defs>
-                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                        <stop stop-color="rgba(29.589, 33.326, 57.24, 1)" offset="0%"></stop>
-                        <stop stop-color="rgba(157.644, 164.383, 207.508, 1)" offset="100%"></stop>
-                    </linearGradient>
-                </defs>
-                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,294L48,253.2C96,212,192,131,288,81.7C384,33,480,16,576,24.5C672,33,768,65,864,114.3C960,163,1056,229,1152,245C1248,261,1344,229,1440,179.7C1536,131,1632,65,1728,98C1824,131,1920,261,2016,310.3C2112,359,2208,327,2304,261.3C2400,196,2496,98,2592,98C2688,98,2784,196,2880,196C2976,196,3072,98,3168,73.5C3264,49,3360,98,3456,130.7C3552,163,3648,180,3744,155.2C3840,131,3936,65,4032,40.8C4128,16,4224,33,4320,57.2C4416,82,4512,114,4608,171.5C4704,229,4800,310,4896,334.8C4992,359,5088,327,5184,294C5280,261,5376,229,5472,236.8C5568,245,5664,294,5760,310.3C5856,327,5952,310,6048,253.2C6144,196,6240,98,6336,114.3C6432,131,6528,261,6624,285.8C6720,310,6816,229,6864,187.8L6912,147L6912,490L6864,490C6816,490,6720,490,6624,490C6528,490,6432,490,6336,490C6240,490,6144,490,6048,490C5952,490,5856,490,5760,490C5664,490,5568,490,5472,490C5376,490,5280,490,5184,490C5088,490,4992,490,4896,490C4800,490,4704,490,4608,490C4512,490,4416,490,4320,490C4224,490,4128,490,4032,490C3936,490,3840,490,3744,490C3648,490,3552,490,3456,490C3360,490,3264,490,3168,490C3072,490,2976,490,2880,490C2784,490,2688,490,2592,490C2496,490,2400,490,2304,490C2208,490,2112,490,2016,490C1920,490,1824,490,1728,490C1632,490,1536,490,1440,490C1344,490,1248,490,1152,490C1056,490,960,490,864,490C768,490,672,490,576,490C480,490,384,490,288,490C192,490,96,490,48,490L0,490Z"></path>
-            </svg>
-            <h1 class="encabezado1">
-                Adiminium
-            </h1>
-            <h2 class="encabezado2">
-                Crece con tu empresa de la mejor manera posible!
-            </h2>        
-        </section>
+        <img class="logo" src="./icon/icon.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="./public/Contacto.html">Contacto</a></li>
+                <li><a href="./public/Stock.html">Stock</a></li>
+                <li><a href="./public/Clientes-Proveedores.html">Clientes-Proveedores</a></li>
+                <li><a href="./public/Precios.html">Precios</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+            </ul>
+        </nav>
     </header>
+    <section class="wave-tittle">
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 300">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(29.589, 33.326, 57.24, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(157.644, 164.383, 207.508, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,294L48,253.2C96,212,192,131,288,81.7C384,33,480,16,576,24.5C672,33,768,65,864,114.3C960,163,1056,229,1152,245C1248,261,1344,229,1440,179.7C1536,131,1632,65,1728,98C1824,131,1920,261,2016,310.3C2112,359,2208,327,2304,261.3C2400,196,2496,98,2592,98C2688,98,2784,196,2880,196C2976,196,3072,98,3168,73.5C3264,49,3360,98,3456,130.7C3552,163,3648,180,3744,155.2C3840,131,3936,65,4032,40.8C4128,16,4224,33,4320,57.2C4416,82,4512,114,4608,171.5C4704,229,4800,310,4896,334.8C4992,359,5088,327,5184,294C5280,261,5376,229,5472,236.8C5568,245,5664,294,5760,310.3C5856,327,5952,310,6048,253.2C6144,196,6240,98,6336,114.3C6432,131,6528,261,6624,285.8C6720,310,6816,229,6864,187.8L6912,147L6912,490L6864,490C6816,490,6720,490,6624,490C6528,490,6432,490,6336,490C6240,490,6144,490,6048,490C5952,490,5856,490,5760,490C5664,490,5568,490,5472,490C5376,490,5280,490,5184,490C5088,490,4992,490,4896,490C4800,490,4704,490,4608,490C4512,490,4416,490,4320,490C4224,490,4128,490,4032,490C3936,490,3840,490,3744,490C3648,490,3552,490,3456,490C3360,490,3264,490,3168,490C3072,490,2976,490,2880,490C2784,490,2688,490,2592,490C2496,490,2400,490,2304,490C2208,490,2112,490,2016,490C1920,490,1824,490,1728,490C1632,490,1536,490,1440,490C1344,490,1248,490,1152,490C1056,490,960,490,864,490C768,490,672,490,576,490C480,490,384,490,288,490C192,490,96,490,48,490L0,490Z"></path>
+        </svg>
+    </section>
+    <h1 class="encabezado1">
+        Adiminium
+    </h1>
+    <h2 class="encabezado2">
+        Crece con tu empresa de la mejor manera posible!
+    </h2>        
     <main>
         <!--Agregar Fotos con texto explicativo de cada funcion-->
         <section class="cards-conteiner">
@@ -134,5 +132,6 @@
             <div class="datos-personales">
         </section>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
