@@ -26,49 +26,34 @@
             </nav>
         </section>
     <main>
-        <!--Agregado de un Cliente o un Proveedor segun corresponda-->
-        <form action="">
-            <label for="cli*prov">Elija una Opcion</label>
-            <select id="cli-prov" name="Cliente-Proveedor">
-              <option value="Proveedor">Proveedor</option>
-              <option value="Cliente">Cliente</option>
-            </select>
-            <br><H2>Que accion desea realizar</H2>
-        </form>
-        <form action="">
-             <input type="radio" id="agregar" name="accion" value="AGREGAR">
-            <label for="agregar">AGREGAR</label><br>
-            <input type="radio" id="editar" name="accion" value="EDITAR">
-            <label for="editar">EDITAR</label><br>
-        </form>
         <!--Formulario para gregado de un Proveedor con todos los datos Correspondientes-->
-        <section class="provedores-main">
+        <section class="proveedores-main">
             <div class="add-prov">        
+                <h2>DATOS DE PROVEEDOR</h2>
                 <form action="" class="proveedores-datos">
-                    <h2>DATOS DE PROVEEDOR</h2>
                     <label for="">Tipo de Documentacion</label>
                     <select name="" id="">
                         <option value="">DNI</option>
                         <option value="">CUIT</option>
-                    </select><br>
+                    </select>
                     <label for="">Numero</label>
-                    <input type="number" name="" id=""><br>
+                    <input type="number" name="" id="">
                     <label for="">Razon Social/Nombre </label>
-                    <input type="text" name="" id=""><br>
+                    <input type="text" name="" id="">
                     <label for="">Nombre de Fantasia </label>
-                    <input type="text" name="" id=""><br>
+                    <input type="text" name="" id="">
                     <label for="">Codigo de Proveedor</label>
-                    <input type="text" name="" id=""><br>
-                    <label for="">Categoria </label>
-                    <input type="text" name="" id=""><br>
+                    <input type="text" name="" id="">
+                    <label for="">Categoria de Proveedor</label>
+                    <input type="text" name="" id="">
                     <label for="">Personeria</label>
                     <select name="" id="">
                         <option value="">Fisica</option>
                         <option value="">Juridica</option>
                     </select><br>
                 </form>
+                <H2>DATOS DE CONTACTO</H2>
                 <form action="" class="proveedores-contacto">
-                        <H2>DATOS DE CONTACTO</H2>
                         <label for="">Pais</label>
                         <select id="" name="">
                             <option value="">Pais Ejemplo</option>
@@ -87,35 +72,59 @@
                         <input type="text" name="" id="">
                         <label for="">Email</label>
                         <input type="text" name="" id="">
-                </form> 
-                <form action="">
-                    <h2>DATOS ADICIONALES</h2>
-                    <label for="">Obervaciones</label><br>
-                    <input type="text" name="" id=""><br>
+                    </form> 
+                <h2>DATOS ADICIONALES</h2>
+                <form action="" class= "prov-datos-ad">
+                    <label for="">Obervaciones</label>
+                    <textarea name="" id="obs-prov" cols="50" rows="5">
+                    </textarea>
+                    <button class="subir-datos">Agregar</button>
+                    <button class="cancelar"> Cancelar</button>
                 </form>
             </div>
             <!--Tabla con el listado de los proveedores ya cargados
             Mas la posibilidad de buscar entre ellos alguno en especial
             Tambien estan los botones de editado y de Eliminacion en caso de que se desee hacerlo-->           
             <div class="ver-proveedores">
-                <form action="">
-                    <label for="">Ingrese el Nombre o Algun dato de Proveedor</label><br>
-                    <input type="text" name="" id=""><br>
+                <h2>LISTADO DE PROVEEDORES</h2>
+                <form action="" class="form-lista-prov">
+                    <label for="" class="ing-prov-busq">Ingrese el Nombre o Algun dato de Proveedor</label>
+                    <input type="text" name="" id="" class="busq-prov">
+                    <div class="boton-busqueda">
+                        <button type="button"> Buscar </button>
+                        <button type="button"> Agregar un Proveedor </button>
+                        <button type="button"> Descarga de Informes </button>
+                    </div>
                 </form>
-                <button type="button"> Buscar </button>
-                <button type="button"> Agregar un proveedor </button>
-                <button type="button"> Descarga de Informes </button>
-                <table class="Lista-de-Proveedores">
+                <table class="lista-proveedores">
                     <tr>
-                        <th>Razon Social </th>
-                        <th>Nombre de Fantasia </th>
-                        <th>Codigo </th>
-                        <th>Acciones </th>
+                        <th class="encabezado-tabla">Razon Social </th>
+                        <th class="encabezado-tabla">Nombre de Fantasia </th>
+                        <th class="encabezado-tabla">Codigo </th>
+                        <th class="encabezado-tabla">Acciones </th>
                     </tr>
                     <tr>
+                        <th>PepsiCo Snacks & Sodas</th>
                         <th>PepsiCo</th>
-                        <th>Lays</th>
-                        <th>LAYS</th>
+                        <th>PEPSI</th>
+                        <th>
+                            <button type="button">Eliminar</button>
+                            <button type="button">Editar</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Coca-Cola & Co.</th>
+                        <th>Coca Cola</th>
+                        <th>COCA-COLA</th>
+                        <th>
+                            <button type="button">Eliminar</button>
+                            <button type="button">Editar</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Mondalez International</th>
+                        <th>Chocolates Milka </th>
+                        <th>Milka</th>
                         <th>
                             <button type="button">Eliminar</button>
                             <button type="button">Editar</button>
@@ -127,74 +136,92 @@
         <!--Seccion de Agregado de un cliente-->
         <section class="clientes-main">
             <div class="add-cl">        
+                <h2>DATOS DE CLIENTE</h2>
                 <form action="" class="clientes-datos">
-                    <h2>DATOS DE Cliente</h2>
-                    <label for="">Tipo de Documentacion</label><br>
+                    <label for="">Tipo de Documentacion</label>
                     <select name="" id="">
                         <option value="">DNI</option>
-                        <option value="">CUIT</option>
+                        <option value="">CUIT/CUIL</option>
                     </select>
-                    <label for=""></label><br>
+                    <label for="">Numero</label>
+                    <input type="number" name="" id="">
+                    <label for="">Razon Social/Nombre </label>
                     <input type="text" name="" id="">
-                    <label for=""></label><br>
+                    <label for="">Nombre de Fantasia</label>
                     <input type="text" name="" id="">
-                    <label for=""></label><br>
+                    <label for="">Codigo de Cliente</label>
                     <input type="text" name="" id="">
-                    <label for=""></label><br>
+                    <label for="">Categoria de Cliente</label>
                     <input type="text" name="" id="">
-                    <label for=""></label><br>
-                    <input type="text" name="" id="">
-                    <label for=""></label><br>
-                    <input type="text" name="" id="">
-                    <label for=""></label><br>
+                    <label for="">Personeria</label>
+                    <select name="" id="">
+                        <option value="">Fisica</option>
+                        <option value="">Juridica</option>
+                    </select>
                 </form>
+                <H2>DATOS DE CONTACTO</H2>
                 <form action="" class="clientes-contacto">
-                        <H2>DATOS DE CONTACTO</H2>
-                        <label for="">Pais</label>
-                        <select id="" name="">
-                            <option value="">Pais Ejemplo</option>
-                        </select>
-                        <label for="">Provincia</label>
-                        <select id="" name="">
-                            <option value="Proveedor">Provincia Ejemplo</option>
-                        </select>
-                        <label for="">Localidad</label>
-                        <select id="" name="">
-                            <option value="">Localidad Ejemplo</option>
-                        </select>
-                        <input type="text" name="" id="">
-                        <label for=""></label><br>
-                        <input type="text" name="" id="">
-                        <label for=""></label><br>
-                        <input type="text" name="" id="">
-                        <label for=""></label><br>
-                        <input type="text" name="" id="">
-                        <label for=""></label><br>
-                </form> 
-                <form action="">
-                    <h2>DATOS ADICIONALES</h2>
-                    <label for=""></label><br>
-                    <input type="text" name="" id=""><br>
-                    <label for=""></label><br>
-                    <input type="text" name="" id=""><br>
+                    <label for="">Pais</label>
+                    <select id="" name="">
+                        <option value="">Pais Ejemplo</option>
+                    </select>
+                    <label for="">Provincia</label>
+                    <select id="" name="">
+                        <option value="">Provincia Ejemplo</option>
+                    </select>
+                    <label for="">Localidad</label>
+                    <select id="" name="">
+                        <option value="">Localidad Ejemplo</option>
+                    </select>
+                    <label for="">Telefono</label>
+                    <input type="text" name="" id="">
+                    <label for="">Direccion</label>
+                    <input type="text" name="" id="">
+                    <label for="">Email</label>
+                    <input type="text" name="" id="">
+            </form> 
+                <h2>DATOS ADICIONALES</h2>
+                <form action="" class="cl-datos-ad">
+                    <label for="">Obervaciones</label>
+                    <textarea name="" id="obs-cl" cols="50" rows="5">
+                    </textarea>
+                    <button class="subir-datos">Agregar</button>
+                    <button class="cancelar"> Cancelar</button>
                 </form>
             </div>
             <!--Tabla con el listado de los clientes ya cargados
             Mas la posibilidad de buscar entre ellos alguno en especial
             Tambien estan los botones de editado y de Eliminacion en caso de que se desee hacerlo-->  
-            <div class="ver-cliente">
-                <form action="">
-                    <label for="">Ingrese el Nombre o Algun dato de Cliente</label><br>
-                    <input type="text" name="" id=""><br>
+            <div class="ver-clientes">
+                <h2>LISTADO DE ClIENTES</h2>
+                <form action="" class="form-lista-cl">
+                    <label for="" class="ing-cl-busq">Ingrese el Nombre o Algun dato de Proveedor</label>
+                    <input type="text" name="" id="" class="busq-cl">
+                    <div class="boton-busqueda">
+                        <button type="button"> Buscar </button>
+                        <button type="button"> Agregar un Proveedor </button>
+                        <button type="button"> Descarga de Informes </button>
+                    </div>
                 </form>
-                <button type="button"> Buscar </button>
-                <button type="button"> Agregar un Cliente </button>
-                <button type="button"> Descarga de Informes </button>
-                <table class="Lista de Proveedores">
+                <table class="lista-cl">
                     <tr>
-                        <th>DNI, CUIL o CUIT</th>
-                        <th>Nombre o Razon Social</th>
-                        <th>Acciones </th>
+                        <th class="encabezado-tabla">DNI/CUIL/CUIT </th>
+                        <th class="encabezado-tabla">Nombre</th>
+                        <th class=></th>
+                    </tr>
+                    <tr>
+                        <th>111111111</th>
+                        <th>Juan Pedro</th>
+                        <th>
+                            <button type="button">Detalle Cliente</button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>222222222</th>
+                        <th>Mercado Vecino</th>
+                        <th>
+                            <button type="button">Detalle Cliente</button>
+                        </th>
                     </tr>
                 </table>
             </div>

@@ -27,6 +27,192 @@ a{
     margin: 10px;
 }
 
+.seleccion-accion  {
+    color: aliceblue;
+    background-color: red;
+}
+
+
+
+
+/*Editado de la seccion proveedores*/
+
+.proveedores-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    background-color: blue;
+}
+
+.proveedores-main .add-prov {
+    background-color: lightblue;
+    padding: 20px;
+}
+.proveedores-main .add-prov .proveedores-datos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+}
+
+/*Agregar Datos Adicionales*/
+
+.proveedores-main .add-prov .proveedores-contacto { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#obs-prov {
+    resize: none;
+    grid-area: textbox;
+}
+
+.proveedores-main .prov-datos-ad .subir-datos{
+    grid-area: subir;
+}
+
+.proveedores-main .prov-datos-ad .cancelar{
+    grid-area: cancelar;
+}
+
+.proveedores-main .prov-datos-ad{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'label . . '
+    'textbox textbox subir'
+    'textbox textbox  .'
+    'textbox textbox  cancelar'
+    ;
+}
+
+/*Pestaña de visualizacion de Proveedores*/
+
+.proveedores-main .ver-proveedores{
+    padding: 20px;
+    background-color: rgb(100, 100, 172);
+    display: flex;
+    flex-direction: column; 
+}
+
+.ver-proveedores .form-lista-prov{
+    display: grid;
+    grid-row: 1fr 1fr;
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+.ver-proveedores .form-lista-prov .boton-busqueda {
+        display: flex;
+        justify-content: space-between;
+}
+
+.ver-proveedores .lista-proveedores{
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+
+
+}
+.ver-proveedores .encabezado-tabla{
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+/*Detallado de la pestaña de Clientes
+Agregado de un Cliente Nuevo*/
+
+
+.clientes-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    background-color: blue;
+}
+
+.clientes-main .add-cl {
+    background-color: lightblue;
+    padding: 20px;
+}
+.clientes-main .add-cl .clientes-datos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+}
+
+.clientes-main .add-cl .clientes-contacto { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.clientes-main .ver-clientes{
+    padding: 20px;
+    background-color: rgb(100, 100, 172);
+    display: flex;
+    flex-direction: column; 
+}
+
+.clientes-main .add-cl .clientes-contacto { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#obs-cl {
+    resize: none;
+    grid-area: textbox;
+}
+
+.clientes-main .cl-datos-ad .subir-datos{
+    grid-area: subir;
+}
+
+.clientes-main .cl-datos-ad .cancelar{
+    grid-area: cancelar;
+}
+
+.clientes-main .cl-datos-ad{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'label . . '
+    'textbox textbox subir'
+    'textbox textbox  .'
+    'textbox textbox  cancelar'
+    ;
+}
+
+/*Pestaña de visualizacion de Clientes*/
+
+
+
+.ver-clientes .form-lista-cl{
+    display: grid;
+    grid-row: 1fr 1fr;
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+.ver-clientes .form-lista-cl .boton-busqueda {
+        display: flex;
+        justify-content: space-between;
+}
+
+.ver-clientes .lista-cl{
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+}
+.ver-clientes .encabezado-tabla{
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+}
+/*Footer*/
 footer{
     background-color: rgb(40, 19, 53);
 }
