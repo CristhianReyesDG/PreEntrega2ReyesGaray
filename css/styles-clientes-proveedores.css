@@ -10,6 +10,7 @@ a{
 }
 /*Icono del Nav - Clickeable para abrir el formulario de contacto*/
 .nav-icon{
+    padding-left: 10px;
     display: flex;
     width: 30px;
     height: 30px;
@@ -27,13 +28,11 @@ a{
     margin: 10px;
 }
 
-.seleccion-accion  {
-    color: aliceblue;
-    background-color: red;
+.contacto-button-index{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
-
-
-
 
 /*Editado de la seccion proveedores*/
 
@@ -232,10 +231,3 @@ footer{
 .footer-icon-hover:hover{
     transform: scale(110%);
 }
-
-
-.datos-personales{
-    text-align: center;
-}
-
-

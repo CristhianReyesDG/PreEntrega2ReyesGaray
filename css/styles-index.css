@@ -27,6 +27,7 @@ a{
 }
 /*Valores del Nav - Color, espaciado y demas*/
 .nav-index{
+    padding: 10px;
     position: sticky;
     background-color: rgb(82, 55, 145);
     display: flex;
@@ -36,6 +37,11 @@ a{
 }
 .nav-button-index{
     margin: 10px;
+}
+.contacto-button-index{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 

@@ -1,0 +1,108 @@
+/*Puesta en cero de valores por defecto de la pagina*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*header*/
+/*Color de la letra del Nav*/
+a{
+    color: aliceblue;
+}
+/*Icono del Nav - Clickeable para abrir el formulario de contacto*/
+.nav-icon{
+    padding-left: 10px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+/*Valores del Nav - Color, espaciado y demas*/
+.nav-index{
+    position: sticky;
+    background-color: rgb(82, 55, 145);
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-button-index{
+    margin: 10px;
+}
+
+.contacto-button-index{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*MAIN */
+
+.contacto{
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    height: 800px;
+}
+.contacto .contacto-div{
+    display: grid;
+    padding: 10px;
+    justify-content: space-between;
+    grid-template-areas: 
+    'imagen form agradecimiento'
+    ;
+}
+
+
+.contacto .contacto-div .agradecimiento-div{
+    background-color: rgb(205, 235, 245);
+    display: grid;
+    padding: 70px 10px 10px 10px;
+}
+.contacto .contacto-div .card-img{
+    background-color: rgb(205, 235, 245);
+    padding: 70px 10px 10px 10px;
+    display: grid;
+
+}
+.contacto .contacto-div .form-contacto{
+    display: grid;
+    padding: 10px;
+    align-items: stretch;
+    text-align: center;
+}
+
+
+.car-img{
+    grid-area: imagen;
+}
+
+.agradecimiento-div{
+    grid-area: agradecimiento;
+}
+
+.form-contacto{
+    grid-area: form;
+}
+
+footer{
+    height: 100px;
+    background-color: rgb(40, 19, 53);
+}
+.index-footer .contacto-footer{
+    display: flex;
+    height: 70px;
+    justify-content: space-evenly;
+}
+.contacto-footer img{
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+}
+.footer-icon-hover:hover{
+    transform: scale(110%);
+}
+
+.datos-personales{
+    text-align: center;
+}
+
+

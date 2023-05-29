@@ -8,85 +8,68 @@
     <!--Agregado del icono-->
     <link rel="shortcut icon" href="../icon/icon.png" type="image/x-icon">
     <!--Localizado de la pagina encargada de ingresar los datos css al documento html-->
-    <link rel="stylesheet" href="../css/styles-Contacto.css">
+    <link rel="stylesheet" href="../css/styles-contacto.css">
 </head>
 <body>
     <header>
-        <!--Menu Superior de Navegacion, con el Link a los diferentes documentos html-->
-            <nav class="Menu-direcciones">
-                <a href="../index.html" target="_self">Pagina de Inicio</a>
-                <a href="../public/Stock.html" target="_self">Stock</a>
-                <a href="../public/Precios.html" target="_self">Precios</a>
-                <a href="../public/Clientes-Proveedores.html" target="_self">Clientes-Proveedores</a> 
-                <!--Aqui no se agrega el boton de contacto-->
+        <section class="encaberzado-index">
+            <nav class="nav-index">
+                <a href="../public/Contacto.html" class="contacto-button-index"> 
+                    <img src="../icon/icon.png" alt="Icono" class="nav-icon">
+                    Contactenos
+                </a>
+                <div class="test">
+                    <a href="../index.html" target="_self" class="index-button nav-button-index">Pagina de Inicio</a>
+                    <a href="../public/Stock.html" target="_self" class="stock-button nav-button-index">Stock</a>
+                    <a href="../public/Precios.html" target="_self" class = "precios-button nav-button-index">Precios</a>
+                    <a href="../public/Clientes-Proveedores.html" target="_self" class="cli-prov-button nav-button-index">Clientes-Proveedores</a> 
+                </div>
             </nav>
-            <section class="textos-header">
-                <!--Titulo principal de la pagina-->
-                <h1>
-                    Adiminium
-                </h1>
-                <!--Pequeño Resumen de lo que se vera en la pagina-->
-                <h2>
-                    Administra tus ventas e Integraciones en un solo lugar
-                </h2>
-            </section>
-            <!--Se inserta la ola que aparece al final del encabezado-->
-            <div class="wave-inicio" style="height: 150px; overflow: hidden;" >
-                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M0.00,49.98 C53.33,152.47 356.37,15.30 500.00,49.98 L500.00,150.00 L-1.97,150.50 Z" style="stroke: none; fill: #fff;"></path>
-                </svg>
-            </div>
+        </section>
     </header>
     <main>
-        <!--Contenido principal de la pagina-->
-        <section class="contenedor">
-            <h2 class="titulo">Un gusto que nos escribas</h2>
-            <!--Se agrega un formulario para que el cliente suba sus datos para poder contactarnos cuando recibamos la informacion-->
-            <div class="contacto-form">
-                <!--Imagen de decoracion al costado del formulario-->
-                <img src="../image/seller-image-1.jpg" alt="Fondo-web" class="Image-fondo-inicio">
-                <!--Formulario con todos los campos a llenar-->
-                <form action="./Contacto.html">
+        <section class="contacto">
+            <div class="contacto-div">
+                <div class="card-img">
+                    <img src="../image/seller-image-1.jpg" alt="Fondo-web" class="Image-fondo-inicio">
+                    <div class="texto-img">
+                        <h2>Un gusto que nos escribas</h2>
+                        <p>Esperamos tu mensaje para poder ponernos en contacto y poder trabajar juntos.</p>
+                    </div>
+                </div>
+                <div class="agradecimiento-div">
+                    <img src="../image/image-ejemplo-3.jpg" alt="Fondo-agradecimiento" class="Image-fondo-inicio">
+                    <div class="nosotros">
+                        <h2>Juntos podemos realizar muchas cosas!</h2>
+                        <p>El crecimiento de tu empresa o negocio es importante para nosotros.</p> 
+                    </div>
+                </div>
+                <form action="./Contacto.html" class="form-contacto">
                     <h2>Contactanos</h2>
                     <input type="text" name="Nombre" id="Name-contact"  placeholder="Nombre" >
                     <input type="text" name="Empresa" id="Name-enterprise"  placeholder="Empresa o SRL">
                     <input type="text" name="Email" id="Name-email" placeholder="Email de Contacto" >
-                    <textarea name="about-you" id="" cols="30" rows="10" placeholder="Cuentanos cual seria tu propuesta"></textarea>
-                    <!--Boton que envia la informacion. Ahora solo recarga la pagina-->
-                    <button>Enviar </button>  
-                </form>   
-            </div>
-        </section>
-        <!--Agradecimientos personales y charla mas informal-->
-        <section class="portafolio">
-            <div class="contenedor">
-                <h2 class="titulo">Juntos podemos realizar muchas cosas!</h2>
-                <div class="nosotros">
-                    <img src="../image/image-ejemplo-3.jpg" alt="">
-                </div>
-                <h3 class="sabemos">Sabemos de lo que hablamos</h3>
-                <p>Esperamos tu mensaje para poder ponernos en contacto y poder trabajar juntos.</p>
-                <p>El crecimiento de tu empresa o negocio es importante para nosotros. Podemos llegar a progresar mucho!</p> 
+                    <textarea name="about-you" id="" cols="30" rows="30" placeholder="Cuentanos cual seria tu propuesta"></textarea>
+                    <button>Enviar</button>  
+                </form> 
             </div>
         </section>
     </main>
     <!--Pie de pagina con datos de contacto y Derechos de Autor-->
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>11111111</p>
+    <footer class="index-footer">
+        <section>
+            <div class="contacto-footer" >
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/fb.png" alt="Facebook" class="footerfb">
+                </a>
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/wpp.png" alt="Whatsapp" class="footerwpp">
+                </a>
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/email.png" alt="Email" class="footeremail">
+                </a>
             </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>ejemplo@gmail.com</p>
-            </div>
-            <div class="content-foo">
-                <h4>Redes</h4>
-                <p>instagram.com</p>
-            </div>
-        </div>
-        <h2 id="fondo"> &copy; Adiminium | Cristhian Reyes </h2>
+        </section>
     </footer>
 </body>
 </html>
