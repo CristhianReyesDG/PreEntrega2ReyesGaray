@@ -28,6 +28,7 @@ header {
     color: #ffffff;
 }
 
+
 .abrir-menu,
 .cerrar-menu {
     display: none;
@@ -80,6 +81,29 @@ header {
     .nav-list li a {
         color: #c9bbbbec;
     }
+
+    .add-prov{
+        grid-area: provdat;
+    }
+
+    .ver-proveedores{
+        grid-area: proveedorlist;
+    }
+
+    .add-cl{
+        grid-area: clientdat;
+    }
+
+    .ver-clientes{
+        grid-area: clientlist;
+    }
+
+    
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 /*Editado de la seccion proveedores*/
