@@ -1,48 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Adiminium</title>
-            
-            <link rel="shortcut icon" href="./icon/icon.png" type="image/x-icon">
-            <link rel="stylesheet" href="../css/styles-precios">
-    </head>
-    <body>
-        <header>
-            <section class="encaberzado-index">
-                <nav class="nav-index">
-                    <a href="../public/Contacto.html" class="contacto-button-index"> 
-                        <img src="../icon/icon.png" alt="Icono" class="nav-icon">
-                        Contactenos
-                    </a>
-                    <div class="test">
-                        <a href="../index.html" target="_self" class="index-button nav-button-index">Pagina de Inicio</a>
-                        <a href="../public/Stock.html" target="_self" class="stock-button nav-button-index">Stock</a>
-                        <a href="../public/Precios.html" target="_self" class = "precios-button nav-button-index">Precios</a>
-                        <a href="../public/Clientes-Proveedores.html" target="_self" class="cli-prov-button nav-button-index">Clientes-Proveedores</a> 
-                    </div>
-                </nav>
-            </section>
-        </header>
-        <main>
-
-        </main>
-        <footer class="index-footer">
-            <section>
-                <div class="contacto" >
-                    <a href="" class="footer-icon-hover">
-                        <img src="../icon/fb.png" alt="Facebook" class="footerfb">
-                    </a>
-                    <a href="" class="footer-icon-hover">
-                        <img src="../icon/wpp.png" alt="Whatsapp" class="footerwpp">
-                    </a>
-                    <a href="" class="footer-icon-hover">
-                        <img src="../icon/email.png" alt="Email" class="footeremail">
-                    </a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiminium</title>
+    <link rel="stylesheet" href="../css/styles-precios.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../icon/icon.png" type="image/x-icon">
+</head>
+<body>
+    <!--Header con los datos generales de pestañas-->
+    <header>
+        <img class="logo" src="../icon/icon.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="../public/Contacto.html">Contacto</a></li>
+                <li><a href="../public/Stock.html">Stock</a></li>
+                <li><a href="../public/Clientes-Proveedores.html">Clientes-Proveedores</a></li>
+                <li><a href="../public/Precios.html">Precios</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="productos-main">
+        <div class="add-prod">        
+            <h2>Buscar Producto</h2>
+            <form action="" class="busqueda-prod">
+                <label for="">Deposito</label>
+                <input type="text" name="" id="">
+                <label for="">Detalle</label>
+                <input type="text" name="" id="">
+                <label for="">Rubro </label>
+                <input type="text" name="" id="">
+                <label for="">Codigo de Proveedor</label>
+                <input type="text" name="" id="">
+                <label for="">Categoria Producto</label>
+                <input type="text" name="" id="">
+                <div class="boton-busqueda">
+                    <button type="button">Buscar</button>
+                    <button type="button"> Agregar un Producto </button>
+                    <button type="button"> Descarga de Informes </button>
                 </div>
-            </section>
-        </footer>
-    </body>
+                </form> 
+        </div>        
+        <div class="ver-productos">
+            <h2>LISTADO DE PRODUCTOS</h2>
+            <form action="" class="form-lista-prod">
+                <label for="" class="ing-prod-busq">Ingrese el Nombre o Algun dato de Proveedor</label>
+                <input type="text" name="" id="" class="busq-prod">
+                <div class="boton-busqueda">
+                    <button type="button"> Buscar </button>
+                    <button type="button"> Agregar un Proveedor </button>
+                    <button type="button"> Descarga de Informes </button>
+                </div>
+            </form>
+            <table class="lista-productos">
+                <tr>
+                    <th class="encabezado-tabla">Producto</th>
+                    <th class="encabezado-tabla">Marca </th>
+                    <th class="encabezado-tabla">Precio de Compra </th>
+                    <th class="encabezado-tabla">Precio de Venta </th>
+                </tr>
+                <tr>
+                    <th>Gaseosa</th>
+                    <th>PepsiCo</th>
+                    <th>50</th>
+                    <th>70</th>
+                </tr>
+                <tr>
+                    <th>Snack</th>
+                    <th>Lays</th>
+                    <th>20</th>
+                    <th>40</th>
+                </tr>
+                
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer class="index-footer">
+        <section>
+            <div class="contacto" >
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/fb.png" alt="Facebook" class="footerfb">
+                </a>
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/wpp.png" alt="Whatsapp" class="footerwpp">
+                </a>
+                <a href="" class="footer-icon-hover">
+                    <img src="../icon/email.png" alt="Email" class="footeremail">
+                </a>
+            </div>
+        </section>
+    </footer>
+    <script src="../js/main.js"></script>
+
+</body>
 </html>

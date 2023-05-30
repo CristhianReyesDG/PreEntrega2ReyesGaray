@@ -82,6 +82,9 @@ header {
     }
 }
 
+.wave{
+    overflow: clip;
+}
 
 main{
     display: grid;
